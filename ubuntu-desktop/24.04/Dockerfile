@@ -82,6 +82,6 @@ RUN mkdir -p /var/run/sshd && \
 RUN bash /docker_config/post_install.sh &&\
     rm -rf /var/lib/apt/lists/*
 
-EXPOSE 22 4000
+EXPOSE 4000
 
 ENTRYPOINT ["/docker_config/entrypoint.sh"]
